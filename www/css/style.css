@@ -1,0 +1,28 @@
+.home{
+	padding: 30px 0;
+}
+.home *{
+	margin:20px 0;
+	text-align: center;
+}
+.quest-container{
+	padding: 20px;
+}
+.quest-container label{
+	font-size: 16px;
+}
+.score-content{
+	padding: 20px;
+	background: #f0f0f0;
+	text-transform: uppercase;
+	text-align: center;
+}
+.score-content h2{
+	margin-top: 30px;
+}
+.pane .bar-footer a {
+	text-align: center !important;
+	text-decoration: none;
+	float: none;
+}
+

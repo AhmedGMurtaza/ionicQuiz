@@ -1,0 +1,19 @@
+<ion-view title="Question# {{questionNo}}">
+      <ion-nav-bar class="bar bar-header bar-dark">
+      </ion-nav-bar>  
+
+	<ion-content class="quest-container">
+		<h2>{{question}}</h2>
+		<ol>
+			<li ng-repeat="answer in answers">
+				<label for="radio">
+					<input type="radio" name="radio" ng-click="answerChoice()"> &nbsp;{{answer}}
+				</label>
+			</li>
+		</ol>
+		<br>
+		<a class="button-assertive button" href="#/{{questionNo + 1}}" ng-disabled="nextRoute()">Next</a>
+		<a class="button-energized button" ui-sref="score" ng-disabled="!nextRoute()">Finish</a>
+	</ion-content>
+</ion-view>		
+ 
